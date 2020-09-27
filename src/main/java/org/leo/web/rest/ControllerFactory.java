@@ -115,6 +115,7 @@ public final class ControllerFactory {
             } catch (ClassNotFoundException e) {
                 logger.error("Class not found, {}", className);
             }
+            dir = new File(path);
             if (clazz != null && clazz.getAnnotation(RestController.class) != null) {
                 if (clazz != null) {
                     classes.add(clazz);
