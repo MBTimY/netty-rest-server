@@ -28,11 +28,11 @@ public class WebServerTest {
         // 跨域拦截器
         server.addInterceptor(new CorsInterceptor(), "/不用拦截的url");
         
-        try {
+        /*try {
             server.start();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
 }
